@@ -1,10 +1,10 @@
 import React from 'react';
 import '../hojas-de-estilo/Boton.css';
 
-function Boton({ texto, esBotonDeClic, controlBotones }) {
+function Boton({ texto, selectButton, controlBotones }) {
   return (
     <button
-      className={esBotonDeClic ? 'boton-clic' : 'boton-reiniciar'}
+      className={selectButton ? 'boton-incrementar' : 'boton-reiniciar'}
       onClick={controlBotones}>
       {texto}
     </button>

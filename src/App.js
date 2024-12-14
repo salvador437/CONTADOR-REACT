@@ -5,14 +5,14 @@ import { useState } from 'react';
 
 function App() {
 
-  const [numClics, setNumClics] = useState(0);
+  const [pulsaciones, setNumClics] = useState(0);
 
-  const manejarClic = () => {
-    setNumClics(numClics + 1);
+  const incrementarContador = () => {
+    setNumClics(pulsaciones + 1);
   }
 
-  const manejarClicmenos = () =>{
-    setNumClics(numClics - 1);
+  const decrementarContador = () =>{
+    setNumClics(pulsaciones - 1);
   }
 
   const reset = () => {
@@ -23,19 +23,19 @@ function App() {
     <div className='App'>
       
       <div className='container'>
-        <Contador numClics={numClics} />
+        <Contador numClics={pulsaciones} />
         <Boton 
           texto='+1'
-          esBotonDeClic={true}
-          controlBotones={manejarClic} />
+          selectButton={true}
+          controlBotones={incrementarContador} />
         <Boton 
           texto='Reset'
-          esBotonDeClic={false}
+          selectButton={false}
           controlBotones={reset} />
         <Boton 
           texto='-1'
-          esBotonDeClic={true}
-          controlBotones={manejarClicmenos} /> 
+          selectButton={true}
+          controlBotones={decrementarContador} /> 
       </div>
     </div>
   );
