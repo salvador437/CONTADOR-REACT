@@ -5,25 +5,24 @@ import { useState } from 'react';
 
 function App() {
 
-  const [pulsaciones, setNumClics] = useState(0);
+  const [pulsaciones, setPulsaciones] = useState(0);
 
   const incrementarContador = () => {
-    setNumClics(pulsaciones + 1);
+    setPulsaciones(pulsaciones + 1);
   }
 
   const decrementarContador = () =>{
-    setNumClics(pulsaciones - 1);
+    setPulsaciones(pulsaciones - 1);
   }
 
   const reset = () => {
-    setNumClics(0);
+    setPulsaciones(0);
   }
 
   return (
     <div className='App'>
-      
       <div className='container'>
-        <Contador numClics={pulsaciones} />
+        <Contador totalPulsaciones={pulsaciones} />
         <Boton 
           texto='+1'
           selectButton={true}

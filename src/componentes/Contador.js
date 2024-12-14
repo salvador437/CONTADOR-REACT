@@ -1,10 +1,10 @@
 import React from 'react';
 import '../hojas-de-estilo/Contador.css';
 
-function Contador({ numClics }) {
+function Contador({ totalPulsaciones }) {
   return (
     <div className='contador'>
-      {numClics}
+      {totalPulsaciones}
     </div>
   );   
 }
