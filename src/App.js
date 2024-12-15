@@ -6,7 +6,7 @@ import { useState } from 'react';
 function App() {
 
   const [pulsaciones, setPulsaciones] = useState(0);
-
+  
   const incrementarContador = () => {
     setPulsaciones(pulsaciones + 1);
   }

@@ -6,6 +6,7 @@ function Boton({ texto, selectButton, controlBotones }) {
     <button
       className={selectButton ? 'boton-incrementar' : 'boton-reiniciar'}
       onClick={controlBotones}>
+        
       {texto}
     </button>
   );
