@@ -26,9 +26,7 @@ function App() {
         <h1 className='titulo'>Contador de Pulsaciones</h1>
         <p className='subtitulo'>Realizado por: SLP</p>
         <p className='subtitulo2' >React + Hooks</p>
-      <img className='logo'
-          src="logo.jpg"
-          alt='Logo de la app' />
+        <img className='logo' src="logo.jpg" alt='Logo de la app' />
 
         <Contador totalPulsaciones={pulsaciones} />
         <Boton 
