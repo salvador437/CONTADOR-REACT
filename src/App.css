@@ -27,45 +27,7 @@ body {
   margin: 20px;
 }
 
-.logo {
-  display: flex;
-  position: absolute;
-  top: 70px;
-  flex-direction: column;
-  width: 70px;
-  height: 70px;
-  margin-bottom: 200px;
-  border-radius: 15px;
-  user-select: none;
-}
 
-.titulo {
-  position: absolute;
-  top: 30px;
-  font-size: 30px;
-  color: white;
-  text-align: center;
-  margin-bottom: 20px;
-  user-select: none;
-}
-
-.subtitulo {
-  position: absolute;
-  bottom: 170px;
-  font-size: 20px;
-  color: white;
-  text-align: center;
-  user-select: none;
-}
-
-.subtitulo2{
-  position: absolute;
-  bottom: 150px;
-  font-size: 20px;
-  color: white;
-  text-align: center;
-  user-select: none;
-}
 
 .container {
   display: flex;

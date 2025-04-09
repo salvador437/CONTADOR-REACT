@@ -2,6 +2,7 @@ import './App.css';
 import Boton from './componentes/Boton';
 import Contador from './componentes/Contador';
 import { useState } from 'react';
+import Header from './componentes/header';
 
 function App() {
 
@@ -23,10 +24,12 @@ function App() {
   return (
     <div className='App'>
       <div className='container'>
-        <h1 className='titulo'>Contador de Pulsaciones</h1>
-        <p className='subtitulo'>Realizado por: SLP</p>
-        <p className='subtitulo2' >React + Hooks</p>
-        <img className='logo' src="logo.jpg" alt='Logo de la app' />
+        <Header 
+          titulo='Contador de Pulsaciones'
+          subtitulo='Realizado por: SLP'
+          subtitulo2='React + Hooks'
+          logo='logo.jpg'
+        />
 
         <Contador totalPulsaciones={pulsaciones} />
         <Boton 
