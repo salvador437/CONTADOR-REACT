@@ -19,12 +19,20 @@ function App() {
     setPulsaciones(0);
   }
 
+  
   return (
     <div className='App'>
       <div className='container'>
+        <h1 className='titulo'>Contador de Pulsaciones</h1>
+        <p className='subtitulo'>Realizado por: SLP</p>
+        <p className='subtitulo2' >React + Hooks</p>
+      <img className='logo'
+          src="logo.jpg"
+          alt='Logo de la app' />
+
         <Contador totalPulsaciones={pulsaciones} />
         <Boton 
-          texto='+1'
+          texto='Incrementar'
           selectButton={true}
           controlBotones={incrementarContador} />
         <Boton 
@@ -32,9 +40,10 @@ function App() {
           selectButton={false}
           controlBotones={reset} />
         <Boton 
-          texto='-1'
+          texto='Decrementar'
           selectButton={true}
           controlBotones={decrementarContador} /> 
+
       </div>
     </div>
   );

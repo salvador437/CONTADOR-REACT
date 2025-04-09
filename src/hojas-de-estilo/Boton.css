@@ -9,10 +9,11 @@ button {
   border-radius: 5px;
   margin: 5px;
   cursor: pointer;
+  user-select: none;
 }
 
 button:hover {
-  background-color: orangered;
+  background-color: rgb(47, 0, 255);
 }
 
 .boton-incrementar {
@@ -21,4 +22,8 @@ button:hover {
 
 .boton-reiniciar {
   background-color: black;
+  &:hover{
+    background-color: red;
+  }
 }
+
