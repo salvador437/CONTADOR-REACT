@@ -1,8 +1,9 @@
 import './App.css';
 import Boton from './componentes/Boton';
 import Contador from './componentes/Contador';
+import Header from './componentes/Header';
 import { useState } from 'react';
-import Header from './componentes/header';
+
 
 function App() {
 
@@ -30,16 +31,19 @@ function App() {
           subtitulo2='React + Hooks'
           logo='logo.jpg'
         />
-
+        
         <Contador totalPulsaciones={pulsaciones} />
+        
         <Boton 
           texto='Incrementar'
           selectButton={true}
           controlBotones={incrementarContador} />
+        
         <Boton 
           texto='Reset'
           selectButton={false}
           controlBotones={reset} />
+        
         <Boton 
           texto='Decrementar'
           selectButton={true}
