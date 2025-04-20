@@ -29,7 +29,7 @@ function App() {
           titulo='Contador de Pulsaciones'
           subtitulo='Realizado por: SLP'
           subtitulo2='React + Hooks'
-          logo='logo.jpg'
+          logo='./imgenes/logo.png'
         />
         
         <Contador totalPulsaciones={pulsaciones} />
