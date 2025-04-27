@@ -3,7 +3,8 @@ import Boton from './componentes/Boton';
 import Contador from './componentes/Contador';
 import Header from './componentes/Header';
 import { useState } from 'react';
-
+import React from 'react';
+import logo from './imagenes/logo.png';
 
 function App() {
 
@@ -29,7 +30,7 @@ function App() {
           titulo='Contador de Pulsaciones'
           subtitulo='Realizado por: SLP'
           subtitulo2='React + Hooks'
-          logo='./imgenes/logo.png'
+          logo={logo}
         />
         
         <Contador totalPulsaciones={pulsaciones} />
