@@ -6,6 +6,8 @@ import { useState } from 'react';
 import React from 'react';
 import logo from './imagenes/logo.png';
 
+
+
 function App() {
 
   const [pulsaciones, setPulsaciones] = useState(0);
